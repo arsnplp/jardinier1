@@ -1,0 +1,20 @@
+POLICES AUTO-HÉBERGÉES — fichiers à déposer ici
+================================================
+
+Le site fonctionne sans ces fichiers (une pile de polices système prend le
+relais), mais la typo voulue par la charte n'apparaîtra qu'une fois ces
+5 fichiers .woff2 déposés dans ce dossier, avec EXACTEMENT ces noms :
+
+  fraunces-600.woff2       Titres, graisse semi-bold
+  fraunces-700.woff2       Titres, graisse bold
+  public-sans-400.woff2    Texte courant
+  public-sans-600.woff2    Texte courant, semi-bold
+  public-sans-700.woff2    Boutons et éléments forts
+
+Les deux familles (Fraunces et Public Sans) sont sous licence SIL Open Font
+License, librement utilisables en commercial. Téléchargez-les depuis
+Google Fonts, convertissez-les en .woff2 et sous-réglez-les au jeu de
+caractères latin pour alléger le poids (viser < 40 Ko par fichier).
+
+Les règles @font-face sont déjà écrites dans /assets/css/style.css avec
+font-display: swap. Aucune modification du CSS n'est nécessaire.

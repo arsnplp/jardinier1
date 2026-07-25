@@ -1,0 +1,10 @@
+# robots.txt — Mas-if de Provence, jardinier paysagiste à Meyrargues
+# Remplacer le domaine ci-dessous par le domaine définitif (voir README).
+
+User-agent: *
+Allow: /
+
+# Gabarit d'article : ne doit jamais être indexé
+Disallow: /blog/_modele-article.html
+
+Sitemap: https://www.mas-if-de-provence.fr/sitemap.xml

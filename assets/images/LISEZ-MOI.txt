@@ -1,0 +1,13 @@
+IMAGES — fichiers à déposer ici
+===============================
+
+Aucune photo n'a été fournie à ce stade. Les emplacements <img> sont déjà
+en place dans le HTML, avec les bonnes dimensions et un alt rédigé : il
+suffit de déposer les fichiers aux noms exacts attendus pour qu'ils
+s'affichent, sans toucher au code.
+
+Le tableau complet (nom de fichier → description de la photo → dimensions →
+page concernée) se trouve dans le README.md à la racine du site.
+
+Format conseillé : JPG ou WebP, compressé sous 300 Ko, aux dimensions
+exactes indiquées.

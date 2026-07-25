@@ -1,0 +1,7 @@
+# Sources brutes des visuels (PNG/JPG d'origine, ~65 Mo).
+# Elles ne servent pas au site : les versions optimisées sont dans
+# assets/images/. Conservez-les de votre côté, hors dépôt.
+/image/
+
+# macOS
+.DS_Store
