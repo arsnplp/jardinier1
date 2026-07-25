@@ -7,4 +7,4 @@ Allow: /
 # Gabarit d'article : ne doit jamais être indexé
 Disallow: /blog/_modele-article.html
 
-Sitemap: https://www.mas-if-de-provence.fr/sitemap.xml
+Sitemap: https://jardinier1.nairox.fr/sitemap.xml

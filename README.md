@@ -282,7 +282,7 @@ RGPD obligatoire avec mention de la durée de conservation.
 Le domaine définitif n'ayant pas été communiqué, le site utilise un domaine **provisoire** :
 
 ```
-https://www.mas-if-de-provence.fr
+https://jardinier1.nairox.fr
 ```
 
 Il apparaît dans les `<link rel="canonical">`, les balises Open Graph, le JSON-LD, le
@@ -291,7 +291,7 @@ Il apparaît dans les `<link rel="canonical">`, les balises Open Graph, le JSON-
 Sur macOS ou Linux, depuis le dossier du site :
 
 ```bash
-grep -rl "www.mas-if-de-provence.fr" . \
+grep -rl "jardinier1.nairox.fr" . \
   | xargs sed -i '' 's|www\.mas-if-de-provence\.fr|VOTRE-DOMAINE.fr|g'
 ```
 
