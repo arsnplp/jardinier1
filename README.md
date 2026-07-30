@@ -27,14 +27,14 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 
 ## 2. Contenu livré
 
-**30 pages HTML** (27 indexables + 3 volontairement `noindex`).
+**32 pages HTML** (29 indexables + 3 volontairement `noindex`).
 
 ```
 /
 ├── index.html                            Accueil
 ├── 404.html                              Page d'erreur personnalisée (noindex)
 ├── robots.txt
-├── sitemap.xml                           27 URLs
+├── sitemap.xml                           29 URLs
 ├── favicon.svg                           Logo texte temporaire (feuille)
 ├── README.md                             Ce fichier
 │
@@ -51,13 +51,15 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 ├── jardinier-jouques/                    │
 ├── jardinier-le-puy-sainte-reparade/     │
 ├── jardinier-pertuis/                    │
-├── jardinier-aix-en-provence/            ├─ 12 pages ville
+├── jardinier-aix-en-provence/            ├─ 14 pages ville
 ├── jardinier-rognes/                     │
 ├── jardinier-vauvenargues/               │
 ├── jardinier-la-roque-d-antheron/        │
 ├── jardinier-lambesc/                    │
 ├── jardinier-eguilles/                   │
-├── jardinier-saint-cannat/               ┘
+├── jardinier-saint-cannat/               │
+├── jardinier-cadenet/                    │
+├── jardinier-lourmarin/                  ┘
 │
 ├── zone-intervention/                    Hub des communes
 ├── contact/                              Coordonnées, horaires, carte,
@@ -96,7 +98,7 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 | `/desherbage-meyrargues/` | désherbage Meyrargues |
 | `/gazon-synthetique-meyrargues/` | gazon synthétique Meyrargues |
 | `/zone-intervention/` | jardinier Pays d'Aix |
-| `/jardinier-[commune]/` (×12) | jardinier + nom de la commune |
+| `/jardinier-[commune]/` (×14) | jardinier + nom de la commune |
 | `/contact/` | devis jardinier Meyrargues |
 
 ---
@@ -112,7 +114,7 @@ dans le site — faites une recherche de cette chaîne dans tous les fichiers po
 
 | # | Élément | Où | Pourquoi c'est bloquant |
 |---|---|---|---|
-| 1 | **Nom de domaine définitif** | Partout (voir §6) | Les `canonical`, l'`og:url`, le `sitemap.xml` et le JSON-LD pointent vers un domaine provisoire |
+| 1 | ~~**Nom de domaine définitif**~~ | ✅ fait | Le site est en ligne sur **midpjardin.fr** — `canonical`, Open Graph, JSON-LD, `sitemap.xml` et `robots.txt` à jour |
 | 2 | **Endpoint du formulaire** | `assets/js/main.js` (§5) | **Le formulaire de `/contact/` est en mode démo : il affiche un succès mais n'envoie RIEN.** Toute demande client serait perdue |
 | 3 | **Mentions légales** | `/mentions-legales/` | Obligation légale : raison sociale, SIRET, RCS/RM, TVA, directeur de publication, hébergeur, assurances |
 | 4 | **Adresse e-mail** | Pied de page, contact, mentions légales | Affichée en `[à compléter]` |
@@ -126,21 +128,22 @@ dans le site — faites une recherche de cette chaîne dans tous les fichiers po
 | 7 | **Avis clients & note Google** | Section prévue sur l'accueil | Aucun avis fourni → section volontairement absente. Procédure d'activation en §9 |
 | 8 | **Tarifs indicatifs** | 7 pages prestation, section « Tarifs » | Actuellement « devis gratuit, prix ferme annoncé avant intervention » + `[à compléter]` pour les fourchettes |
 | 9 | **Zone d'intervention exacte** | `/zone-intervention/`, FAQ accueil | Rayon en km et politique de frais de déplacement |
-| 10 | **Liste des communes à valider** | 12 pages ville | Voir l'encadré ci-dessous |
+| 10 | **Liste des communes à valider** | 14 pages ville | Voir l'encadré ci-dessous |
 | 11 | **Périmètre exact des prestations** | `/a-propos/`, FAQ | Élagage de grands arbres ? Débroussaillement OLD complet ? Contrat d'entretien annuel ? |
 | 12 | **Informations entreprise** | `/a-propos/` | Année de création, effectif, diplômes/certifications, assurance RC pro et décennale |
 | 13 | **Logo définitif** | `favicon.svg`, en-tête, pied de page | Voir l'encadré ci-dessous |
 | 14 | ~~**Charte graphique**~~ | ✅ fournie | Les 5 couleurs sont appliquées à l'ensemble du site — voir §10.3 |
 
-> ### 📍 Encadré — les 12 communes ciblées : à valider
+> ### 📍 Encadré — les 14 communes ciblées : à valider
 > Le brief ne fournissait pas la liste des communes. Plutôt que des `[Ville 1]`, `[Ville 2]`…
 > — qui auraient rendu impossible le contenu géographique unique exigé pour éviter les
-> *doorway pages* — nous avons retenu **12 communes réelles autour de Meyrargues** :
+> *doorway pages* — nous avons retenu **14 communes réelles autour de Meyrargues** :
 > Peyrolles-en-Provence, Venelles, Jouques, Le Puy-Sainte-Réparade, Pertuis (84),
-> Aix-en-Provence, Rognes, Vauvenargues, La Roque-d'Anthéron, Lambesc, Éguilles, Saint-Cannat.
+> Aix-en-Provence, Rognes, Vauvenargues, La Roque-d'Anthéron, Lambesc, Éguilles, Saint-Cannat,
+> Cadenet (84) et Lourmarin (84).
 >
 > **À vérifier par l'entreprise :**
-> - Ces 12 communes correspondent-elles bien à votre zone ? En retirer / en ajouter selon la réalité.
+> - Ces 14 communes correspondent-elles bien à votre zone ? En retirer / en ajouter selon la réalité.
 > - **Les distances et temps de trajet indiqués sont des ordres de grandeur à valider** (page `/zone-intervention/`, tableau, et le champ « à X minutes de Meyrargues » de chaque page ville).
 > - Les délais annoncés (« visite de devis sous une semaine », etc.) sont des hypothèses : ajustez-les à votre charge réelle.
 >
@@ -282,7 +285,7 @@ RGPD obligatoire avec mention de la durée de conservation.
 Le domaine définitif n'ayant pas été communiqué, le site utilise un domaine **provisoire** :
 
 ```
-https://jardinier1.nairox.fr
+https://midpjardin.fr
 ```
 
 Il apparaît dans les `<link rel="canonical">`, les balises Open Graph, le JSON-LD, le
@@ -291,7 +294,7 @@ Il apparaît dans les `<link rel="canonical">`, les balises Open Graph, le JSON-
 Sur macOS ou Linux, depuis le dossier du site :
 
 ```bash
-grep -rl "jardinier1.nairox.fr" . \
+grep -rl "midpjardin.fr" . \
   | xargs sed -i '' 's|www\.mas-if-de-provence\.fr|VOTRE-DOMAINE.fr|g'
 ```
 
@@ -566,7 +569,7 @@ le site lui-même**.
 - **NAP strictement identique** au site : « Mas-if de Provence — Jardinier Paysagiste »,
   23 Rue Henri Bosco, 13650 Meyrargues, 07 89 47 32 16. La moindre variation dilue le signal.
 - Catégorie principale : *Paysagiste* ou *Entreprise d'aménagement paysager*.
-- Renseignez les horaires (identiques au site), la zone desservie (les 12 communes) et les
+- Renseignez les horaires (identiques au site), la zone desservie (les 14 communes) et les
   7 prestations en tant que services.
 - **Publiez 10 à 20 photos de chantiers réels** (avant/après surtout) et ajoutez-en régulièrement.
 - Liez la fiche vers la page la plus pertinente du site.
