@@ -126,7 +126,7 @@ dans le site — faites une recherche de cette chaîne dans tous les fichiers po
 | 5 | **Coordonnées GPS (latitude / longitude)** | JSON-LD `LocalBusiness` de `/index.html` et `/contact/` | Ajouter une propriété `geo` (voir §10.1). Améliore nettement le référencement local |
 | 6 | ~~**Photos réelles**~~ | ✅ complet | Les 9 visuels du site sont en place. Ils proviennent d'images générées par IA : à remplacer par de vraies photos de chantier dès que possible — voir §4 |
 | 7 | **Avis clients & note Google** | Section prévue sur l'accueil | Aucun avis fourni → section volontairement absente. Procédure d'activation en §9 |
-| 8 | **Tarifs indicatifs** | 7 pages prestation, section « Tarifs » | Actuellement « devis gratuit, prix ferme annoncé avant intervention » + `[à compléter]` pour les fourchettes |
+| 8 | **Tarifs indicatifs** | 7 pages prestation, section « Tarifs » | Actuellement « devis gratuit, détaillé avant intervention » + `[à compléter]` pour les fourchettes |
 | 9 | **Zone d'intervention exacte** | `/zone-intervention/`, FAQ accueil | Rayon en km et politique de frais de déplacement |
 | 10 | **Liste des communes à valider** | 14 pages ville | Voir l'encadré ci-dessous |
 | 11 | **Périmètre exact des prestations** | `/a-propos/`, FAQ | Élagage de grands arbres ? Débroussaillement OLD complet ? Contrat d'entretien annuel ? |

@@ -575,6 +575,7 @@ a.card:hover .cval { color: var(--accent-ink); }
 
 /* 16 PAGES INTERNES : LAYOUT + SIDEBAR */
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: var(--sp-7); align-items: start; }
+.layout > * { min-width: 0; }
 .sidebar { position: sticky; top: calc(var(--header-h) + var(--sp-4)); display: grid; gap: var(--sp-5); }
 
 .side-card {

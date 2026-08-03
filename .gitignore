@@ -5,3 +5,6 @@
 
 # macOS
 .DS_Store
+
+# Artefacts de test navigateur
+.playwright-mcp/
