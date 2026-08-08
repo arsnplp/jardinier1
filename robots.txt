@@ -3,8 +3,8 @@
 User-agent: *
 Allow: /
 
-# Le gabarit d'article /blog/_modele-article.html n'est volontairement PAS bloqué
-# ici : il porte déjà <meta name="robots" content="noindex, nofollow">. Un Disallow
-# empêcherait Google de lire cette balise, donc de la respecter.
+# Gabarit d'article : usage interne uniquement. Il est bloqué ici ET renvoyé en 404
+# par nginx, pour que Google ne le crawle jamais et ne remonte pas d'erreur dessus.
+Disallow: /blog/_modele-article.html
 
 Sitemap: https://midpjardin.fr/sitemap.xml
