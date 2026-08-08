@@ -1,10 +1,10 @@
 # robots.txt — Mas-if de Provence, jardinier paysagiste à Meyrargues
-# Remplacer le domaine ci-dessous par le domaine définitif (voir README).
 
 User-agent: *
 Allow: /
 
-# Gabarit d'article : ne doit jamais être indexé
-Disallow: /blog/_modele-article.html
+# Le gabarit d'article /blog/_modele-article.html n'est volontairement PAS bloqué
+# ici : il porte déjà <meta name="robots" content="noindex, nofollow">. Un Disallow
+# empêcherait Google de lire cette balise, donc de la respecter.
 
 Sitemap: https://midpjardin.fr/sitemap.xml
