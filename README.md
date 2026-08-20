@@ -106,13 +106,15 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 ## 3. Informations encore manquantes
 
 Le **20 août 2026**, l'entreprise a fourni ses coordonnées et son identité légale. Le site est
-passé de **85 marqueurs `[à compléter]` à 3**. Ce qui reste ne peut pas être deviné.
+passé de **85 marqueurs `[à compléter]` à 2**. Ce qui reste ne peut pas être deviné.
 
 ### 3.1 Renseigné le 20 août 2026
 
 | Élément | Valeur intégrée |
 |---|---|
 | Adresse e-mail | `midpjardin@gmail.com` — 32 emplacements (pied de page de chaque page, contact, mentions légales) |
+| Raison sociale | Michaël Coulaux, entrepreneur individuel |
+| Directeur de la publication | Michaël Coulaux |
 | Forme juridique | Entreprise individuelle (entrepreneur individuel) |
 | SIRET / SIREN | 942 096 165 00017 / 942 096 165 |
 | TVA intracommunautaire | FR 89 942 096 165 |
@@ -124,13 +126,12 @@ passé de **85 marqueurs `[à compléter]` à 3**. Ce qui reste ne peut pas êtr
 | Tarifs | **Décision du client : pas de fourchettes, tout est sur devis.** Les 7 pages prestation ont été réécrites en ce sens |
 | Photos, logo, communes | **Décision du client : on garde l'existant.** Ces points sont clos |
 
-### 3.2 Les 3 marqueurs restants
+### 3.2 Les 2 marqueurs restants
 
 | # | Élément | Où | Détail |
 |---|---|---|---|
-| 1 | **Directeur de la publication** | `/mentions-legales/` | Nom et prénom de la personne responsable du contenu. Obligatoire (LCEN art. 6-III) |
-| 2 | **Médiateur de la consommation** | `/mentions-legales/` | Nom, adresse et site. Obligatoire dès lors qu'on vend à des particuliers — suppose une adhésion à un organisme (CM2C, MCP Médiation…) |
-| 3 | **Coordonnées GPS** | Commentaire HTML dans `/index.html` | Latitude / longitude à ajouter dans la propriété `geo` du JSON-LD `LocalBusiness` (voir §10.1). Invisible pour le visiteur, utile au référencement local |
+| 1 | **Médiateur de la consommation** | `/mentions-legales/` | Nom, adresse et site. Obligatoire dès lors qu'on vend à des particuliers — suppose une adhésion à un organisme (CM2C, MCP Médiation…) |
+| 2 | **Coordonnées GPS** | Commentaire HTML dans `/index.html` | Latitude / longitude à ajouter dans la propriété `geo` du JSON-LD `LocalBusiness` (voir §10.1). Invisible pour le visiteur, utile au référencement local |
 
 ### 3.3 Sans marqueur, mais toujours utile
 
