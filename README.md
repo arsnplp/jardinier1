@@ -11,7 +11,7 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 
 1. [Sommaire](#1-sommaire)
 2. [Contenu livré](#2-contenu-livré)
-3. [⚠ À COMPLÉTER avant la mise en ligne](#3--à-compléter-avant-la-mise-en-ligne)
+3. [Informations encore manquantes](#3-informations-encore-manquantes)
 4. [Photos — tableau de correspondance](#4-photos--tableau-de-correspondance)
 5. [Brancher le formulaire (1 ligne)](#5-brancher-le-formulaire-1-ligne)
 6. [Remplacer le nom de domaine](#6-remplacer-le-nom-de-domaine)
@@ -103,49 +103,51 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 
 ---
 
-## 3. ⚠ À COMPLÉTER avant la mise en ligne
+## 3. Informations encore manquantes
 
-Ces informations **n'ont pas été fournies** et n'ont volontairement **pas été inventées**
-(un avis, une certification ou une année de création inventés sont faux, et pour les avis,
-juridiquement sanctionnables). Elles apparaissent partout sous la forme **`[à compléter]`**
-dans le site — faites une recherche de cette chaîne dans tous les fichiers pour les retrouver.
+Le **20 août 2026**, l'entreprise a fourni ses coordonnées et son identité légale. Le site est
+passé de **85 marqueurs `[à compléter]` à 3**. Ce qui reste ne peut pas être deviné.
 
-### 3.1 Bloquant — le site ne doit pas être publié sans ça
+### 3.1 Renseigné le 20 août 2026
 
-| # | Élément | Où | Pourquoi c'est bloquant |
-|---|---|---|---|
-| 1 | ~~**Nom de domaine définitif**~~ | ✅ fait | Le site est en ligne sur **midpjardin.fr** — `canonical`, Open Graph, JSON-LD, `sitemap.xml` et `robots.txt` à jour |
-| 2 | **Endpoint du formulaire** | `assets/js/main.js` (§5) | **Le formulaire de `/contact/` est en mode démo : il affiche un succès mais n'envoie RIEN.** Toute demande client serait perdue |
-| 3 | **Mentions légales** | `/mentions-legales/` | Obligation légale : raison sociale, SIRET, RCS/RM, TVA, directeur de publication, hébergeur, assurances |
-| 4 | **Adresse e-mail** | Pied de page, contact, mentions légales | Affichée en `[à compléter]` |
+| Élément | Valeur intégrée |
+|---|---|
+| Adresse e-mail | `midpjardin@gmail.com` — 32 emplacements (pied de page de chaque page, contact, mentions légales) |
+| Forme juridique | Entreprise individuelle (entrepreneur individuel) |
+| SIRET / SIREN | 942 096 165 00017 / 942 096 165 |
+| TVA intracommunautaire | FR 89 942 096 165 |
+| Immatriculation | RNE — pas de numéro RCS propre pour un entrepreneur individuel |
+| Capital social | Sans objet |
+| Hébergeur | Hostinger International Ltd, 61 Lordou Vironos Street, 6023 Larnaca, Chypre |
+| Propriété des photos | Mas-if de Provence |
+| Assurances | Renvoi aux devis et factures (art. L111-2 code de la consommation) — l'assureur et le n° de police n'ont pas été communiqués |
+| Tarifs | **Décision du client : pas de fourchettes, tout est sur devis.** Les 7 pages prestation ont été réécrites en ce sens |
+| Photos, logo, communes | **Décision du client : on garde l'existant.** Ces points sont clos |
 
-### 3.2 Important — à faire rapidement après
+### 3.2 Les 3 marqueurs restants
 
 | # | Élément | Où | Détail |
 |---|---|---|---|
-| 5 | **Coordonnées GPS (latitude / longitude)** | JSON-LD `LocalBusiness` de `/index.html` et `/contact/` | Ajouter une propriété `geo` (voir §10.1). Améliore nettement le référencement local |
-| 6 | ~~**Photos réelles**~~ | ✅ complet | Les 9 visuels du site sont en place. Ils proviennent d'images générées par IA : à remplacer par de vraies photos de chantier dès que possible — voir §4 |
-| 7 | **Avis clients & note Google** | Section prévue sur l'accueil | Aucun avis fourni → section volontairement absente. Procédure d'activation en §9 |
-| 8 | **Tarifs indicatifs** | 7 pages prestation, section « Tarifs » | Actuellement « devis gratuit, détaillé avant intervention » + `[à compléter]` pour les fourchettes |
-| 9 | **Zone d'intervention exacte** | `/zone-intervention/`, FAQ accueil | Rayon en km et politique de frais de déplacement |
-| 10 | **Liste des communes à valider** | 14 pages ville | Voir l'encadré ci-dessous |
-| 11 | **Périmètre exact des prestations** | `/a-propos/`, FAQ | Élagage de grands arbres ? Débroussaillement OLD complet ? Contrat d'entretien annuel ? |
-| 12 | **Informations entreprise** | `/a-propos/` | Année de création, effectif, diplômes/certifications, assurance RC pro et décennale |
-| 13 | **Logo définitif** | `favicon.svg`, en-tête, pied de page | Voir l'encadré ci-dessous |
-| 14 | ~~**Charte graphique**~~ | ✅ fournie | Les 5 couleurs sont appliquées à l'ensemble du site — voir §10.3 |
+| 1 | **Directeur de la publication** | `/mentions-legales/` | Nom et prénom de la personne responsable du contenu. Obligatoire (LCEN art. 6-III) |
+| 2 | **Médiateur de la consommation** | `/mentions-legales/` | Nom, adresse et site. Obligatoire dès lors qu'on vend à des particuliers — suppose une adhésion à un organisme (CM2C, MCP Médiation…) |
+| 3 | **Coordonnées GPS** | Commentaire HTML dans `/index.html` | Latitude / longitude à ajouter dans la propriété `geo` du JSON-LD `LocalBusiness` (voir §10.1). Invisible pour le visiteur, utile au référencement local |
 
-> ### 📍 Encadré — les 14 communes ciblées : à valider
-> Le brief ne fournissait pas la liste des communes. Plutôt que des `[Ville 1]`, `[Ville 2]`…
-> — qui auraient rendu impossible le contenu géographique unique exigé pour éviter les
-> *doorway pages* — nous avons retenu **14 communes réelles autour de Meyrargues** :
+### 3.3 Sans marqueur, mais toujours utile
+
+| Élément | Détail |
+|---|---|
+| **Endpoint du formulaire** | Le formulaire ouvre désormais le logiciel de messagerie du visiteur vers `midpjardin@gmail.com` (§5). Cela fonctionne, mais un vrai endpoint (Formspree, Web3Forms — gratuit) donne un envoi direct, sans dépendre du client mail du visiteur |
+| **Assureur et n° de police** | Les nommer dans les mentions légales est plus solide que le renvoi actuel aux devis |
+| **Avis clients & note Google** | Section volontairement absente : aucun avis n'a été inventé. Procédure d'activation en §9 |
+| **Année de création, effectif, diplômes** | Non fournis. Les rubriques ont été retirées de `/a-propos/` plutôt que laissées vides |
+| **Photos réelles** | 5 prestations sur 7 utilisent encore des visuels générés par IA, ainsi que le portrait de `/a-propos/`. Le client a choisi de les conserver — voir §4 |
+| **Code APE** | Le code déclaré est `81.21Z` (nettoyage courant des bâtiments), qui ne correspond pas à l'activité réelle d'aménagement paysager (`81.30Z`). Sans effet sur le site, mais à vérifier auprès de l'assureur : une activité non déclarée peut ne pas être couverte |
+
+> ### 📍 Encadré — les 14 communes ciblées
 > Peyrolles-en-Provence, Venelles, Jouques, Le Puy-Sainte-Réparade, Pertuis (84),
 > Aix-en-Provence, Rognes, Vauvenargues, La Roque-d'Anthéron, Lambesc, Éguilles, Saint-Cannat,
-> Cadenet (84) et Lourmarin (84).
->
-> **À vérifier par l'entreprise :**
-> - Ces 14 communes correspondent-elles bien à votre zone ? En retirer / en ajouter selon la réalité.
-> - **Les distances et temps de trajet indiqués sont des ordres de grandeur à valider** (page `/zone-intervention/`, tableau, et le champ « à X minutes de Meyrargues » de chaque page ville).
-> - Les délais annoncés (« visite de devis sous une semaine », etc.) sont des hypothèses : ajustez-les à votre charge réelle.
+> Cadenet (84) et Lourmarin (84). **Validées par le client le 20 août 2026.**
+> Les distances et délais annoncés restent des ordres de grandeur.
 >
 > **Pour retirer une commune :** supprimer son dossier `jardinier-[slug]/`, sa ligne dans
 > `sitemap.xml`, et ses liens dans le pied de page, `/zone-intervention/` et les pages voisines.
@@ -153,26 +155,12 @@ dans le site — faites une recherche de cette chaîne dans tous les fichiers po
 > géographique et la FAQ — un texte dupliqué à la ville près serait pénalisé par Google.
 
 > ### 🎨 Encadré — logo et charte graphique
-> **Logo : temporaire.** Aucun logo n'a été fourni. Le site utilise un **logo texte** composé
-> de « Mas-if de Provence » + « Jardinier paysagiste » et d'une pastille avec une feuille
-> dessinée en SVG. On le retrouve à trois endroits :
-> - l'en-tête et le pied de page (généré en HTML, cherchez `class="logo"`),
-> - le fichier `favicon.svg` à la racine.
+> **Logo : en place.** Le logo du client est intégré dans l'en-tête. Le pied de page, sur fond
+> vert foncé, utilise la version texte « Mas-if de Provence » + « Jardinier paysagiste », faute
+> d'une déclinaison claire du logo.
 >
-> **Charte : fournie et appliquée.** Les 5 couleurs du client (`#064A28`, `#5CB545`,
-> `#BFDEAE`, `#B4B5B8`, `#878B8B`) sont en place sur l'ensemble du site, du logo à la carte.
-> Le détail des rôles et des nuances dérivées est en §10.3.
-
-### 3.3 Récapitulatif des `[à compléter]` par page
-
-| Page | Nombre | Nature |
-|---|---|---|
-| `/a-propos/` | 9 | Forme juridique, SIRET, année de création, effectif, diplômes, assurances, avis, élagage, contrat d'entretien |
-| `/mentions-legales/` | ~20 | Toutes les mentions légales obligatoires |
-| Accueil | 6 | Zone exacte, contrat d'entretien, e-mail, GPS |
-| Pages prestation | 2 à 4 chacune | Fourchettes tarifaires, garantie fabricant, périmètre |
-| Pages ville | 1 à 3 chacune | Frais de déplacement, périmètre OLD, contrats, élagage |
-| `/contact/`, `/devis/`, `/blog/`, `/zone-intervention/` | 1 à 2 | E-mail, zone exacte |
+> **Charte : appliquée.** Les 5 couleurs du client (`#064A28`, `#5CB545`, `#BFDEAE`,
+> `#B4B5B8`, `#878B8B`) sont en place sur l'ensemble du site. Détail des rôles en §10.3.
 
 ---
 
@@ -233,8 +221,12 @@ au chargement (bon pour le score Core Web Vitals).
 
 ## 5. Brancher le formulaire (1 ligne)
 
-> ⚠️ **En l'état, les formulaires de devis et de contact sont en MODE DÉMO.**
-> Ils affichent le message de succès mais **n'envoient rien**. Toute demande serait perdue.
+> ℹ️ **En l'état, le formulaire fonctionne sans endpoint.** `FORM_ENDPOINT` étant vide, l'envoi
+> ouvre le logiciel de messagerie du visiteur avec la demande pré-remplie vers
+> `midpjardin@gmail.com` (constante `CONTACT_EMAIL` dans `main.js`), et le message de succès
+> le dit explicitement. **Aucune demande n'est perdue**, mais le visiteur doit cliquer « Envoyer »
+> dans son logiciel de messagerie, et le repli ne marche pas s'il n'en a aucun de configuré.
+> Renseigner un endpoint reste donc préférable : l'envoi devient direct et silencieux.
 
 ### La modification
 

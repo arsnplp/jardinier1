@@ -36,6 +36,11 @@
      -------------------------------------------------------------------- */
   var FORM_ENDPOINT = "";
 
+  /* Adresse de repli : tant que FORM_ENDPOINT est vide, le formulaire ouvre
+     le logiciel de messagerie du visiteur vers cette adresse, plutôt que de
+     faire disparaître la demande. */
+  var CONTACT_EMAIL = "midpjardin@gmail.com";
+
   /* Petits utilitaires ---------------------------------------------------- */
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
@@ -209,13 +214,32 @@
         });
         data.page = window.location.pathname;
 
-        /* --- MODE DÉMO : aucun endpoint configuré ------------------------ */
+        /* --- REPLI SANS ENDPOINT : ouverture du logiciel de messagerie ---
+           Aucun endpoint n'est configuré. Plutôt que d'afficher un succès
+           mensonger et de perdre la demande, on pré-remplit un e-mail vers
+           CONTACT_EMAIL. Un vrai endpoint reste préférable (voir README). */
         if (!FORM_ENDPOINT) {
-          console.info(
-            "[Mas-if de Provence] Mode démo : aucun envoi réel.\n" +
-            "Renseignez FORM_ENDPOINT dans /assets/js/main.js (voir README).\n" +
-            "Données qui auraient été envoyées :", data
-          );
+          var lignes = [];
+          Object.keys(data).forEach(function (cle) {
+            if (data[cle]) { lignes.push(cle + " : " + data[cle]); }
+          });
+          var sujet = "Demande depuis le site";
+          if (data.nom) { sujet += " \u2014 " + data.nom; }
+          window.location.href = "mailto:" + CONTACT_EMAIL +
+            "?subject=" + encodeURIComponent(sujet) +
+            "&body=" + encodeURIComponent(lignes.join("\n"));
+
+          var titre = $("h3", okBox);
+          var texte = $("p", okBox);
+          if (titre) { titre.textContent = "Votre message est pr\u00eat \u00e0 partir"; }
+          if (texte) {
+            texte.innerHTML =
+              "Votre logiciel de messagerie vient de s\u2019ouvrir avec la demande " +
+              "pr\u00e9-remplie : il ne reste qu\u2019\u00e0 l\u2019envoyer. S\u2019il ne s\u2019est pas " +
+              "ouvert, \u00e9crivez-nous \u00e0 <a href=\"mailto:" + CONTACT_EMAIL + "\">" +
+              CONTACT_EMAIL + "</a> ou appelez le " +
+              "<a href=\"tel:+33789473216\"><strong>07 89 47 32 16</strong></a>.";
+          }
           form.hidden = true;
           show(okBox);
           return;
