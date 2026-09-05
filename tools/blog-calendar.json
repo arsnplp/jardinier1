@@ -1,0 +1,102 @@
+{
+  "_lisezmoi": "File de sujets du blog. La routine prend le premier sujet 'pending' dont la saison correspond au mois courant ; à défaut, le premier 'pending' tout court. Ajoutez des sujets à la fin quand la file descend sous 4.",
+  "_saisons": "hiver = déc-fév · printemps = mars-mai · ete = juin-août · automne = sept-nov · toute-saison = n'importe quand",
+  "sujets": [
+    {
+      "slug": "debroussaillement-obligations-legales",
+      "title": "Débroussaillement : ce que la loi impose autour de votre maison",
+      "cardTitle": "Débroussaillement : ce que la loi impose vraiment",
+      "tag": "Sécurité & réglementation",
+      "saison": "printemps",
+      "brief": "Expliquer les obligations légales de débroussaillement (OLD) telles qu'elles s'appliquent dans les Bouches-du-Rhône : quelle zone autour des constructions, quelle hauteur de végétation basse, quelles distances entre houppiers, qui est responsable quand le terrain à débroussailler appartient au voisin. Rappeler que l'arrêté préfectoral fait foi et inviter le lecteur à le consulter. Dire clairement ce que Mas-if de Provence prend en charge (désherbage, débroussaillage de surface, évacuation) et inviter à appeler pour le périmètre complet. Ne citer AUCUN montant d'amende chiffré sans être certain : préférer 'sanctionnable' à un chiffre inventé."
+    },
+    {
+      "slug": "arrosage-automatique-quand-installer",
+      "title": "Arrosage automatique : à quel moment l’installer et comment le régler",
+      "cardTitle": "Arrosage automatique : le bon moment, le bon réglage",
+      "tag": "Arrosage",
+      "saison": "printemps",
+      "brief": "Pourquoi le printemps est la bonne fenêtre pour installer un arrosage automatique. Les questions à trancher avant : pression disponible, nombre de zones, goutte-à-goutte contre asperseurs selon ce qu'on arrose. Les réglages qui comptent vraiment en Provence : arroser tôt le matin, moins souvent mais plus longtemps pour faire descendre les racines, couper après la pluie. Les erreurs classiques (arroser tous les jours 10 minutes, arroser en pleine chaleur). Renvoyer vers /arrosage-automatique-meyrargues/."
+    },
+    {
+      "slug": "jardin-resister-secheresse",
+      "title": "Un jardin qui tient l’été sans arrosage permanent",
+      "cardTitle": "Tenir l’été sans arroser tous les jours",
+      "tag": "Aménagement",
+      "saison": "automne",
+      "brief": "L'automne est la vraie saison de plantation en Provence : planter avant l'hiver laisse aux racines le temps de s'installer avant la chaleur. Détailler les principes d'un jardin sec : choisir des végétaux méditerranéens, pailler, espacer les arrosages dès le départ pour forcer l'enracinement profond, limiter la pelouse. Citer des végétaux réellement adaptés au Pays d'Aix (lavande, romarin, cistes, oliviers, gaura, teucrium) sans inventer de données chiffrées de consommation d'eau."
+    },
+    {
+      "slug": "dechets-verts-que-faire",
+      "title": "Déchets verts : le brûlage est interdit, que faire à la place ?",
+      "cardTitle": "Déchets verts : les solutions légales",
+      "tag": "Entretien",
+      "saison": "toute-saison",
+      "brief": "Rappeler que le brûlage des déchets verts à l'air libre est interdit pour les particuliers, et que le risque incendie en Provence rend la règle encore plus stricte l'été. Passer en revue les solutions : compostage, broyage sur place et paillage, déchèterie, évacuation par un professionnel. Expliquer que chez Mas-if de Provence l'évacuation est une prestation payante, facturée au volume et jamais incluse d'office : le client choisit de garder les végétaux sur place ou de les faire évacuer. Renvoyer vers /evacuation-vegetaux-meyrargues/."
+    },
+    {
+      "slug": "calendrier-jardin-pays-aix",
+      "title": "Le calendrier du jardin en Pays d’Aix, mois par mois",
+      "cardTitle": "Le calendrier du jardin, mois par mois",
+      "tag": "Entretien",
+      "saison": "hiver",
+      "brief": "Un calendrier pratique et vraiment local : que faire chaque mois dans un jardin du Pays d'Aix. Insister sur les spécificités provençales : la taille avant la reprise, le débroussaillement avant l'été, l'automne comme saison de plantation, la coupure de l'arrosage. Structurer en quatre saisons plutôt qu'en douze paragraphes secs. Renvoyer vers plusieurs pages prestation au fil du texte."
+    },
+    {
+      "slug": "desherber-sans-produits",
+      "title": "Désherber sans produits chimiques : ce qui marche vraiment",
+      "cardTitle": "Désherber sans produits chimiques",
+      "tag": "Entretien",
+      "saison": "printemps",
+      "brief": "Rappeler que la vente et l'usage des produits phytosanitaires sont interdits aux particuliers depuis 2019. Comparer honnêtement les méthodes réellement efficaces : désherbage manuel, binage, eau bouillante, désherbeur thermique, paillage, plantes couvre-sol, toile de paillage sous gravier. Dire ce qui ne marche pas ou abîme le sol (sel, vinaigre en grande quantité). Expliquer la différence entre traiter le symptôme et empêcher la repousse. Renvoyer vers /desherbage-meyrargues/."
+    },
+    {
+      "slug": "choisir-essence-haie-provence",
+      "title": "Quelle essence de haie choisir en Provence ?",
+      "cardTitle": "Quelle haie planter en Provence ?",
+      "tag": "Aménagement",
+      "saison": "automne",
+      "brief": "Guider le choix d'une haie sous climat provençal : résistance à la sécheresse, tenue au mistral, vitesse de croissance, entretien réel une fois installée, hauteur visée. Comparer des essences courantes et adaptées (laurier-tin, photinia, cyprès de Provence, pittosporum, elaeagnus, charmille en situation abritée). Aborder les haies mixtes, plus résistantes aux maladies qu'une monoculture. Rappeler les règles de distance de plantation en limite de propriété. Renvoyer vers /taille-de-haie-meyrargues/."
+    },
+    {
+      "slug": "mistral-proteger-jardin",
+      "title": "Le mistral et votre jardin : comment protéger vos plantations",
+      "cardTitle": "Protéger son jardin du mistral",
+      "tag": "Aménagement",
+      "saison": "hiver",
+      "brief": "Expliquer concrètement ce que le mistral fait à un jardin : dessèchement, casse des jeunes sujets, déformation des arbres, envol du paillage. Les parades : brise-vent végétal plutôt que plein, tuteurage correct des jeunes plantations, choix d'essences souples, orientation des massifs, paillage lesté. Expliquer pourquoi un mur plein crée des turbulences alors qu'une haie filtre le vent."
+    },
+    {
+      "slug": "terrassement-eaux-de-pluie",
+      "title": "Terrassement : pourquoi la gestion des eaux de pluie décide de tout",
+      "cardTitle": "Terrassement et eaux de pluie",
+      "tag": "Travaux & budget",
+      "saison": "automne",
+      "brief": "Montrer que le drainage est le point le plus souvent négligé d'un terrassement, et celui qui coûte le plus cher à rattraper. Les épisodes cévenols et les orages d'automne en Provence mettent tout de suite en évidence une pente mal pensée. Aborder : pente d'évacuation, drain, gravier, regard, récupération d'eau de pluie, ruissellement vers le voisin et la responsabilité qui en découle. Renvoyer vers /terrassement-meyrargues/."
+    },
+    {
+      "slug": "entretenir-gazon-synthetique",
+      "title": "Entretenir un gazon synthétique : ce qu’il faut vraiment faire",
+      "cardTitle": "Entretenir un gazon synthétique",
+      "tag": "Aménagement",
+      "saison": "ete",
+      "brief": "Corriger l'idée qu'un gazon synthétique ne demande aucun entretien. Détailler ce qu'il faut réellement faire : brossage à contre-sens pour redresser les fibres, retrait des feuilles, rinçage, désherbage des joints et des bordures, vigilance sur les zones de passage. Aborder la chaleur en plein soleil l'été et l'intérêt d'une zone d'ombre. Expliquer ce qui use un gazon synthétique et ce qui rallonge sa durée de vie. Renvoyer vers /gazon-synthetique-meyrargues/."
+    },
+    {
+      "slug": "creation-jardin-etapes-chantier",
+      "title": "Création de jardin : les étapes d’un chantier, du terrain nu au résultat",
+      "cardTitle": "Les étapes d’une création de jardin",
+      "tag": "Travaux & budget",
+      "saison": "toute-saison",
+      "brief": "Dérouler un chantier de création de jardin dans l'ordre réel : relevé et projet, terrassement et nivellement, réseaux et arrosage enterré, sol et amendements, plantations, engazonnement ou gazon synthétique, finitions et paillage. Expliquer pourquoi cet ordre ne se bouscule pas (passer l'arrosage après les plantations coûte deux fois). Insister sur le fait que le projet peut s'étaler en plusieurs phases, chaque poste étant chiffré séparément sur le devis. Renvoyer vers /creation-jardin-meyrargues/."
+    },
+    {
+      "slug": "tailler-olivier",
+      "title": "Tailler un olivier : quand, comment, et les erreurs à éviter",
+      "cardTitle": "Tailler un olivier sans l’abîmer",
+      "tag": "Taille & entretien",
+      "saison": "printemps",
+      "brief": "La taille de l'olivier en Provence : la fenêtre de fin d'hiver à début de printemps, après les fortes gelées et avant la reprise. Expliquer le principe de la taille en gobelet, l'aération du centre, la suppression des gourmands et du bois mort. Les erreurs fréquentes : tailler trop tard, tailler trop sévèrement d'un coup, tailler un jeune sujet comme un vieux. Préciser que Mas-if de Provence intervient sur les arbustes et les sujets accessibles, et qu'un grand sujet en hauteur relève d'un élagueur grimpeur."
+    }
+  ]
+}

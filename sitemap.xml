@@ -156,22 +156,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- BLOG:AUTO-START -->
   <url>
-    <loc>https://midpjardin.fr/blog/quand-tailler-une-haie/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://midpjardin.fr/blog/prix-terrassement-jardin/</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://midpjardin.fr/blog/gazon-synthetique-ou-naturel/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://midpjardin.fr/blog/prix-terrassement-jardin/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <loc>https://midpjardin.fr/blog/quand-tailler-une-haie/</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- BLOG:AUTO-END -->
 </urlset>

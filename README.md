@@ -22,6 +22,7 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 11. [Tester en local & mettre en ligne](#11-tester-en-local--mettre-en-ligne)
 12. [Les 5 actions SEO hors-site après la mise en ligne](#12-les-5-actions-seo-hors-site-après-la-mise-en-ligne)
 13. [Contrôle qualité déjà effectué](#13-contrôle-qualité-déjà-effectué)
+14. [Publication automatique du blog](#14-publication-automatique-du-blog)
 
 ---
 
@@ -642,3 +643,70 @@ Vérifications passées avec succès sur les 31 pages :
   le menu, les formulaires et les carrousels, `prefers-reduced-motion` respecté, aucun
   débordement horizontal. **Aucun contenu masqué au chargement** : tout est visible d'emblée,
   sans animation d'apparition au défilement.
+
+---
+
+## 14. Publication automatique du blog
+
+Depuis le **5 septembre 2026**, le blog se publie seul : **2 articles par mois, le 1er et le 15**.
+Trois pièces indépendantes, chacune vérifiable séparément.
+
+### 14.1 La routine Claude (rédaction)
+
+Une routine cloud tourne le 1er et le 15 à 5h03 UTC (7h03 à Paris). Elle clone ce dépôt,
+choisit un sujet, rédige l'article, lance le générateur, pousse sur `main`, vérifie que
+la page répond, puis envoie un e-mail de compte rendu.
+
+Pour la voir, la mettre en pause ou changer sa fréquence :
+**https://claude.ai/code/routines**
+
+### 14.2 Le calendrier éditorial
+
+`tools/blog-calendar.json` — la file de sujets. Chaque entrée porte un `slug`, un `title`,
+un `tag`, une `saison` et un `brief` détaillé. La routine prend le premier sujet `pending`
+dont la saison correspond au mois courant, à défaut le premier `pending` tout court, puis
+passe son `status` à `published`.
+
+**Pour imposer un sujet :** ajoutez-le en tête du tableau `sujets`.
+**Pour en interdire un :** passez son `status` à `skipped`.
+Quand la file descend sous 4 sujets, la routine en ajoute elle-même.
+
+### 14.3 Le générateur
+
+`tools/build-blog.py` régénère la liste de `/blog/` et les entrées blog du `sitemap.xml`.
+
+```bash
+python3 tools/build-blog.py          # régénère
+python3 tools/build-blog.py --check  # ne réécrit rien, échoue si ce n'est pas à jour
+```
+
+Sa **source de vérité** est le bloc `<!-- CARD {...} -->` placé juste après `</head>` dans
+chaque `blog/<slug>/index.html` : titre, accroche, rubrique, temps de lecture, date. Les
+articles sont classés du plus récent au plus ancien. Les deux fichiers cibles ne sont
+réécrits qu'**entre leurs marqueurs** `BLOG:AUTO-START` / `BLOG:AUTO-END` — ne les supprimez pas.
+
+Un article sans bloc `CARD` valide est ignoré et signalé sur la sortie d'erreur.
+
+### 14.4 La mise en ligne
+
+`/usr/local/bin/deploy-jardinier1.sh` sur le VPS, appelé **toutes les 2 minutes** par cron.
+Il compare `HEAD` à `origin/main`, et ne fait rien s'il n'y a pas de nouveau commit. Sinon :
+`git reset --hard`, `chown www-data`, permissions 755/644. Un verrou `flock` empêche deux
+exécutions simultanées.
+
+Journal : `/var/log/jardinier1-deploy.log`.
+
+**Conséquence à connaître : tout commit poussé sur `main` part en production dans les
+2 minutes, sans relecture.** C'est le prix de l'automatisation complète. Pour préparer une
+modification sans la publier, travaillez sur une branche et ne fusionnez qu'une fois prêt.
+
+### 14.5 Règles imposées à la routine
+
+Ce sont les mêmes que celles suivies pour tout le site :
+
+- **Aucun prix, jamais.** Le client a choisi le chiffrage sur devis. Aucun article ne doit
+  afficher de tarif, de fourchette ou de prix au mètre carré.
+- **Aucun fait vérifiable inventé** : ni certification, ni année de création, ni avis client,
+  ni statistique.
+- Téléphone **07 89 47 32 16**, e-mail **midpjardin@gmail.com**, et rien d'autre.
+- Modèle de structure : un article déjà publié, **jamais** `_modele-article.html` (il est en `noindex`).
