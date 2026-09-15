@@ -158,6 +158,12 @@
   </url>
   <!-- BLOG:AUTO-START -->
   <url>
+    <loc>https://midpjardin.fr/blog/jardin-resister-secheresse/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://midpjardin.fr/blog/prix-terrassement-jardin/</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
