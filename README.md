@@ -67,6 +67,8 @@ de déposer les fichiers sur n'importe quel hébergeur pour qu'il fonctionne.
 │                                         formulaire de devis en 3 étapes, FAQ
 ├── a-propos/                             Page de confiance
 ├── mentions-legales/                     (noindex, follow)
+├── confidentialite/                      Politique de confidentialité (noindex, follow)
+├── cgu/                                  Conditions générales d'utilisation (noindex, follow)
 │
 ├── blog/
 │   ├── index.html
@@ -269,8 +271,9 @@ automatiquement un message d'erreur invitant à appeler le 07 89 47 32 16 : rien
 silencieusement.
 
 **Déjà prévu, rien à faire :** un piège à robots (champ invisible `_gotcha`), la validation
-native des champs obligatoires, le libellé « Envoi en cours… » pendant la requête, et la case
-RGPD obligatoire avec mention de la durée de conservation.
+native des champs obligatoires, le libellé « Envoi en cours… » pendant la requête, et la mention
+d'information RGPD sous le formulaire (finalité, durée de conservation, droits, lien vers
+`/confidentialite/`). Pas de case à cocher bloquante : la base légale est la demande de devis.
 
 ---
 
@@ -486,7 +489,7 @@ les autres prestations, sans nouveau CSS :
     <figcaption><strong>Avant</strong> — légende courte.</figcaption></figure>
   <!-- autant de <figure> que d'étapes -->
 </div>
-<div class="carou__nav" data-carou="chantier-XXX" role="tablist" aria-label="Étapes du chantier">
+<div class="carou__nav" data-carou="chantier-XXX" role="group" aria-label="Étapes du chantier">
   <button class="btn btn--primary btn--sm" type="button" data-slide="0" aria-current="true">Avant</button>
   <button class="btn btn--ghost btn--sm" type="button" data-slide="1">Pendant</button>
   <button class="btn btn--ghost btn--sm" type="button" data-slide="2">Après</button>
