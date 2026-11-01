@@ -78,7 +78,9 @@
       "cardTitle": "Terrassement et eaux de pluie",
       "tag": "Travaux & budget",
       "saison": "automne",
-      "brief": "Montrer que le drainage est le point le plus souvent négligé d'un terrassement, et celui qui coûte le plus cher à rattraper. Les épisodes cévenols et les orages d'automne en Provence mettent tout de suite en évidence une pente mal pensée. Aborder : pente d'évacuation, drain, gravier, regard, récupération d'eau de pluie, ruissellement vers le voisin et la responsabilité qui en découle. Renvoyer vers /terrassement-meyrargues/."
+      "brief": "Montrer que le drainage est le point le plus souvent négligé d'un terrassement, et celui qui coûte le plus cher à rattraper. Les épisodes cévenols et les orages d'automne en Provence mettent tout de suite en évidence une pente mal pensée. Aborder : pente d'évacuation, drain, gravier, regard, récupération d'eau de pluie, ruissellement vers le voisin et la responsabilité qui en découle. Renvoyer vers /terrassement-meyrargues/.",
+      "status": "published",
+      "publishedAt": "2026-11-01"
     },
     {
       "slug": "entretenir-gazon-synthetique",
