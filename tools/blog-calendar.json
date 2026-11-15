@@ -96,7 +96,9 @@
       "cardTitle": "Les étapes d’une création de jardin",
       "tag": "Travaux & budget",
       "saison": "toute-saison",
-      "brief": "Dérouler un chantier de création de jardin dans l'ordre réel : relevé et projet, terrassement et nivellement, réseaux et arrosage enterré, sol et amendements, plantations, engazonnement ou gazon synthétique, finitions et paillage. Expliquer pourquoi cet ordre ne se bouscule pas (passer l'arrosage après les plantations coûte deux fois). Insister sur le fait que le projet peut s'étaler en plusieurs phases, chaque poste étant chiffré séparément sur le devis. Renvoyer vers /creation-jardin-meyrargues/."
+      "brief": "Dérouler un chantier de création de jardin dans l'ordre réel : relevé et projet, terrassement et nivellement, réseaux et arrosage enterré, sol et amendements, plantations, engazonnement ou gazon synthétique, finitions et paillage. Expliquer pourquoi cet ordre ne se bouscule pas (passer l'arrosage après les plantations coûte deux fois). Insister sur le fait que le projet peut s'étaler en plusieurs phases, chaque poste étant chiffré séparément sur le devis. Renvoyer vers /creation-jardin-meyrargues/.",
+      "status": "published",
+      "publishedAt": "2026-11-15"
     },
     {
       "slug": "tailler-olivier",
